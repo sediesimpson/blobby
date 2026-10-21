@@ -1,6 +1,6 @@
 # blobby
-<<<<<<< HEAD
-A little dancing blob
+
+a little dancing blob
 
 ![blobby dancing](blobby.png)
 
@@ -29,4 +29,3 @@ open index.html
 4. **Waltz**: dances off to the right in 3/4 time
 =======
 a little dancing blob, built purely with html like the good old days
->>>>>>> 7b5a8c3dcf2554a6c5d2f63671f804b2f43037e1
