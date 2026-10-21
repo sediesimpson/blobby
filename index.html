@@ -13,13 +13,27 @@
       position: fixed;
       top: calc(50% - 70px);
       transform-origin: bottom center;
-      animation: peek 2s ease-out 0.5s both;
+      animation:
+        peek 2s ease-out 0.5s both,
+        enter 4s ease-in-out 2.5s forwards;
     }
     @keyframes peek {
       0%   { left: -120px; transform: rotate(0deg); }
       60%  { left: -75px;  transform: rotate(23deg); }
       75%  { left: -75px;  transform: rotate(15deg); }
       100% { left: -75px;  transform: rotate(23deg); }
+    }
+    @keyframes enter {
+      0%   { left: -75px; transform: rotate(25deg); }
+      15%  { left: -40px; transform: rotate(0deg); }
+      25%  { transform: rotate(-6deg); }
+      35%  { transform: rotate(6deg); }
+      45%  { transform: rotate(-6deg); }
+      55%  { transform: rotate(6deg); }
+      65%  { transform: rotate(-6deg); }
+      75%  { transform: rotate(6deg); }
+      85%  { transform: rotate(-6deg); }
+      100% { left: calc(50% - 60px); transform: rotate(0deg); }
     }
   </style>
 </head>
