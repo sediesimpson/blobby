@@ -15,7 +15,9 @@
       transform-origin: bottom center;
       animation:
         peek 2s ease-out 0.5s both,
-        enter 4s ease-in-out 2.5s forwards;
+        enter 4s ease-in-out 2.5s forwards,
+        dance 4s ease-in-out 6.5s forwards,
+        waltz 6s ease-in-out 10.5s forwards;
     }
     @keyframes peek {
       0%   { left: -120px; transform: rotate(0deg); }
@@ -34,6 +36,51 @@
       75%  { transform: rotate(6deg); }
       85%  { transform: rotate(-6deg); }
       100% { left: calc(50% - 60px); transform: rotate(0deg); }
+    }
+    @keyframes dance {
+      /* Hop 1 */
+      0%   { transform: translateY(0)     scale(1, 1); }
+      8%   { transform: translateY(0)     scale(1.15, 0.85); }
+      16%  { transform: translateY(-40px) scale(0.9, 1.1); }
+      24%  { transform: translateY(0)     scale(1.15, 0.85); }
+      30%  { transform: translateY(0)     scale(1, 1); }
+
+      /* Hop 2 */
+      38%  { transform: translateY(0)     scale(1.15, 0.85); }
+      46%  { transform: translateY(-40px) scale(0.9, 1.1); }
+      54%  { transform: translateY(0)     scale(1.15, 0.85); }
+      60%  { transform: translateY(0)     scale(1, 1); }
+
+      /* Twirl */
+      70%  { transform: translateY(-15px) scale(-1, 1); }
+      80%  { transform: translateY(-15px) scale(1, 1); }
+      90%  { transform: translateY(-15px) scale(-1, 1); }
+      100% { transform: translateY(0)     scale(1, 1); }
+    }
+    @keyframes waltz {
+      0%   { left: calc(50% - 60px);  transform: translateY(0)     rotate(0deg); }
+
+      /* Bar 1: ONE two three */
+      10%  { transform: translateY(-15px) rotate(10deg); }
+      16%  { transform: translateY(0)     rotate(4deg); }
+      22%  { transform: translateY(-5px)  rotate(-4deg); }
+
+      /* Bar 2 */
+      32%  { transform: translateY(-15px) rotate(10deg); }
+      38%  { transform: translateY(0)     rotate(4deg); }
+      44%  { transform: translateY(-5px)  rotate(-4deg); }
+
+      /* Bar 3 */
+      54%  { transform: translateY(-15px) rotate(10deg); }
+      60%  { transform: translateY(0)     rotate(4deg); }
+      66%  { transform: translateY(-5px)  rotate(-4deg); }
+
+      /* Bar 4 */
+      76%  { transform: translateY(-15px) rotate(10deg); }
+      82%  { transform: translateY(0)     rotate(4deg); }
+      88%  { transform: translateY(-5px)  rotate(-4deg); }
+
+      100% { left: calc(100% + 40px); transform: translateY(0)     rotate(0deg); }
     }
   </style>
 </head>
