@@ -12,9 +12,14 @@
     #blobby {
       position: fixed;
       top: calc(50% - 70px);
-      left: -75px;
-      transform: rotate(23deg);
       transform-origin: bottom center;
+      animation: peek 2s ease-out 0.5s both;
+    }
+    @keyframes peek {
+      0%   { left: -120px; transform: rotate(0deg); }
+      60%  { left: -75px;  transform: rotate(23deg); }
+      75%  { left: -75px;  transform: rotate(15deg); }
+      100% { left: -75px;  transform: rotate(23deg); }
     }
   </style>
 </head>
