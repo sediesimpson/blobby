@@ -6,7 +6,7 @@ a little dancing blob, built purely with html like the good old days
 
 ## see blobby
 
-Download or clone this repo, then open `index.html` in any browser.
+download or clone this repo, then open `index.html` in any browser
 
 ```
 git clone https://github.com/sediesimpson/blobby.git
@@ -18,12 +18,12 @@ open index.html
 
 - **HTML + SVG** to draw blobby (body, face, cheeks, smile)
 - **CSS keyframes** for each part of the animation
-- **Easing** to make the motion feel natural
-- **Squash and stretch** to make him feel soft and bouncy
+- **easing** to make the motion feel natural
+- **squash and stretch** to make him feel soft and bouncy
 
 ## the show
 
-1. **Peek**: leans in from the left edge, curious
-2. **Enter**: waddles to centre stage
-3. **Dance**: two hops and a twirl
-4. **Waltz**: dances off to the right in 3/4 time
+1. **peek**: leans in from the left edge, curious
+2. **enter**: waddles to centre stage
+3. **dance**: two hops and a twirl
+4. **waltz**: dances off to the right in 3/4 time
